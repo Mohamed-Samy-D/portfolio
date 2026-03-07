@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moayad — Ethical Hacker</title>
+    <meta name="description" content="Personal portfolio of Moayad — Ethical Hacker & Cybersecurity Researcher">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/imgs/logo.ico">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">&lt;MOAYAD/&gt;</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#love">Love</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">// Ethical Hacker &amp; Programmer</div>
+            <h1 id="site-name">Moayad</h1>
+            <p id="site-tagline" class="hero-tagline">breaking systems to build better ones</p>
+            <div class="hero-nav-btns">
+                <a href="#about" class="btn btn-primary">About Me</a>
+                <a href="#books" class="btn btn-ghost">Books</a>
+                <a href="#skills" class="btn btn-ghost">Skills</a>
+                <a href="#hobbies" class="btn btn-ghost">Hobbies</a>
+                <a href="#love" class="btn btn-ghost btn-love">Love ❤️</a>
+                <a href="#social" class="btn btn-ghost">Social</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Languages</span></div>
+                <div class="stat"><span class="stat-num">50+</span><span class="stat-label">CTF Flags</span></div>
+                <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Curiosity</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>scroll down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+        <div class="section-inner about-inner">
+            <div class="about-image-wrap">
+                <div class="about-img-glow"></div>
+                <img id="about-img" src="assets/imgs/me.jpg" alt="Moayad" class="about-img">
+                <div class="about-img-badge"><span class="blink">●</span> Available for work</div>
+            </div>
+            <div class="about-content">
+                <div class="section-label">// About Me</div>
+                <h2 id="about-name">Moayad</h2>
+                <div id="about-specialty" class="about-specialty">Ethical Hacker &amp; Cybersecurity Researcher</div>
+                <p id="about-bio" class="about-bio">I'm Moayad, a passionate ethical hacker and programmer with a deep
+                    interest in cybersecurity, reverse engineering, and exploit development. I believe in understanding
+                    systems at their deepest level to build more secure and resilient software.</p>
+                <div class="about-philosophy">
+                    <div class="philosophy-label">// Philosophy</div>
+                    <blockquote id="about-philosophy">A good hacker doesn't just find vulnerabilities — they understand
+                        why they exist and how to prevent them. Security through knowledge, not obscurity.</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKS -->
+    <section id="books" class="section reveal">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">// Favorite Books</div>
+                <h2 class="section-title">Books That Shaped Me</h2>
+                <p class="section-subtitle">The reading list that built the hacker mindset</p>
+            </div>
+            <div id="books-grid" class="books-grid"></div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">// Skills &amp; Tools</div>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Languages, frameworks, and tools I wield daily</p>
+            </div>
+            <div id="skills-list" class="skills-list"></div>
+        </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="section reveal">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">// Hobbies</div>
+                <h2 class="section-title">What I Do for Fun</h2>
+                <p class="section-subtitle">Technical passions that keep me sharp</p>
+            </div>
+            <div id="hobbies-list" class="hobbies-grid"></div>
+        </div>
+    </section>
+
+    <!-- LOVE -->
+    <section id="love" class="section love-section reveal">
+        <div class="love-section-bg"></div>
+        <div class="love-particles">
+            <span class="lp lp1">💕</span>
+            <span class="lp lp2">✨</span>
+            <span class="lp lp3">🌹</span>
+            <span class="lp lp4">💫</span>
+            <span class="lp lp5">💕</span>
+            <span class="lp lp6">✨</span>
+        </div>
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label love-label">// Love ❤️</div>
+                <h2 class="section-title love-title">My Heart</h2>
+            </div>
+            <div class="love-redesigned">
+                <div class="love-photo-wrap">
+                    <div class="love-photo-glow"></div>
+                    <img id="love-main-img" src="assets/imgs/love1.jpg" alt="Love" class="love-main-photo">
+                    <div class="love-photo-overlay"></div>
+                </div>
+                <div class="love-content-new">
+                    <div class="love-quote-mark">"</div>
+                    <p id="love-message" class="love-message-new">Behind every line of code, there's a feeling that
+                        makes it worth writing. You are my greatest bug fix — the one who made everything make sense.
+                    </p>
+                    <div class="love-quote-author">— Moayad ❤️</div>
+                    <a href="love.html" class="love-cta-btn" id="love-cta-btn">
+                        <span class="love-cta-heart">❤️</span>
+                        <span class="love-cta-text">Open My Heart</span>
+                        <span class="love-cta-arrow">→</span>
+                    </a>
+                    <p class="love-cta-hint">Something special is waiting…</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section id="social" class="section reveal">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-label">// Connect</div>
+                <h2 class="section-title">Find Me Online</h2>
+                <p class="section-subtitle">Let's connect and build something great</p>
+            </div>
+            <div id="social-grid" class="social-grid"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <p class="footer-quote">"The quieter you become, the more you are able to hear."</p>
+            <p class="footer-copy">© <span id="footer-name">Moayad</span> · <span id="footer-year">2026</span></p>
+            <p class="footer-tag">Built with ❤️ &amp; JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING AVATAR -->
+    <button id="avatar-btn" aria-label="Open admin panel">
+        <img src="assets/imgs/hacker1.jpg" alt="Admin" id="avatar-btn-img">
+        <div class="avatar-ring"></div>
+    </button>
+
+    <!-- ADMIN MODAL -->
+    <div id="admin-modal" class="modal-overlay" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-icon">🔐</div>
+            <h3>Admin Access</h3>
+            <p class="modal-sub">Enter password to access the control panel</p>
+            <form id="admin-form">
+                <input type="password" id="admin-pass" placeholder="Enter password..." autocomplete="current-password">
+                <div id="admin-error" class="admin-error" aria-live="polite"></div>
+                <button type="submit" class="btn btn-primary btn-full">Unlock Panel</button>
+            </form>
+            <button class="modal-close" id="modal-close-btn" aria-label="Close">×</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div th:if="${session.ADMIN == true}" id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- SIDEBAR -->
+    <aside th:if="${session.ADMIN == true}" id="sidebar" role="complementary" aria-label="Admin Panel">
+        <div class="sidebar-header">
+            <div class="sidebar-profile">
+                <img id="sb-avatar" src="assets/imgs/hacker1.jpg" alt="Profile">
+                <div>
+                    <div id="sb-name-display" class="sb-name">Moayad</div>
+                    <div id="sb-spec-display" class="sb-spec">Ethical Hacker</div>
+                </div>
+            </div>
+            <button id="sidebar-close" class="sidebar-close-btn" aria-label="Close">×</button>
+        </div>
+
+        <div class="sidebar-tabs">
+            <button class="sb-tab active" data-tab="profile">Profile</button>
+            <button class="sb-tab" data-tab="books">Books</button>
+            <button class="sb-tab" data-tab="love">Love</button>
+            <button class="sb-tab" data-tab="social">Social</button>
+        </div>
+
+        <div class="sidebar-body">
+
+            <!-- PROFILE TAB -->
+            <div id="tab-profile" class="sb-tab-content active">
+                <div class="sb-group">
+                    <label>Name</label>
+                    <input type="text" id="edit-name" placeholder="Your name">
+                </div>
+                <div class="sb-group">
+                    <label>Tagline</label>
+                    <input type="text" id="edit-tagline" placeholder="Your tagline">
+                </div>
+                <div class="sb-group">
+                    <label>Specialty</label>
+                    <input type="text" id="edit-specialty" placeholder="Your specialty">
+                </div>
+                <div class="sb-group">
+                    <label>Bio</label>
+                    <textarea id="edit-bio" rows="4" placeholder="About you..."></textarea>
+                </div>
+                <div class="sb-group">
+                    <label>Philosophy</label>
+                    <textarea id="edit-philosophy" rows="3" placeholder="Your philosophy..."></textarea>
+                </div>
+                <div class="sb-section-title">Skills</div>
+                <div id="sb-skills-list"></div>
+                <button class="btn-add" id="add-skill-btn">+ Add Skill</button>
+                <div class="sb-section-title">Hobbies</div>
+                <div id="sb-hobbies-list"></div>
+                <button class="btn-add" id="add-hobby-btn">+ Add Hobby</button>
+                <button class="btn btn-primary btn-full save-btn" id="save-profile-btn">💾 Save Changes</button>
+            </div>
+
+            <!-- BOOKS TAB -->
+            <div id="tab-books" class="sb-tab-content">
+                <div id="sb-books-list"></div>
+                <button class="btn-add" id="add-book-btn">+ Add Book</button>
+            </div>
+
+            <!-- LOVE TAB -->
+            <div id="tab-love" class="sb-tab-content">
+                <div class="sb-group toggle-row">
+                    <label>Show Love Section</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="love-visible" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="sb-group">
+                    <label>Main Image</label>
+                    <img id="sb-love-preview" src="assets/imgs/love1.jpg" class="sb-img-preview" alt="Love preview">
+                    <input type="file" id="love-img-input" accept="image/*" style="display:none">
+                    <label for="love-img-input" class="btn-add"
+                        style="display:block;text-align:center;cursor:pointer;">📁 Change Image</label>
+                </div>
+                <div class="sb-group">
+                    <label>Love Message</label>
+                    <textarea id="edit-love-msg" rows="5" placeholder="Your love message..."></textarea>
+                </div>
+                <button class="btn btn-primary btn-full save-btn" id="save-love-btn">💾 Save Love</button>
+            </div>
+
+            <!-- SOCIAL TAB -->
+            <div id="tab-social" class="sb-tab-content">
+                <div id="sb-social-list"></div>
+                <button class="btn-add" id="add-social-btn">+ Add Social Link</button>
+                <button class="btn btn-primary btn-full save-btn" id="save-social-btn">💾 Save Social</button>
+            </div>
+
+        </div>
+    </aside>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ For You — Moayad</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="assets/imgs/logo.ico">
+    <link rel="stylesheet" href="assets/css/love.css">
+</head>
+
+<body>
+
+    <!-- ANIMATED BACKGROUND -->
+    <div class="love-bg">
+        <div class="love-bg-grad"></div>
+        <canvas id="hearts-canvas"></canvas>
+    </div>
+
+    <!-- BACK BUTTON -->
+    <a href="index.html#love" class="back-btn" id="back-btn">
+        <span>←</span>
+        <span>Back</span>
+    </a>
+
+    <!-- ============ NAME GATE ============ -->
+    <div id="name-gate" class="name-gate">
+        <div class="gate-card">
+            <div class="gate-heart">❤️</div>
+            <h1 class="gate-title">For Someone Special</h1>
+            <p class="gate-subtitle">This page holds something that was made only for one person…</p>
+            <div class="gate-input-wrap">
+                <input type="text" id="name-input" class="gate-input" placeholder="Type her name…" autocomplete="off"
+                    spellcheck="false" maxlength="40" dir="auto">
+                <div class="gate-input-line"></div>
+            </div>
+            <div class="gate-input-wrap" style="margin-top: 15px;">
+                <input type="password" id="pass-input" class="gate-input" placeholder="Type the password…"
+                    autocomplete="new-password" spellcheck="false" maxlength="40" dir="auto">
+                <div class="gate-input-line"></div>
+            </div>
+            <div id="gate-feedback" class="gate-feedback" aria-live="polite"></div>
+            <button id="gate-btn" class="gate-btn">
+                <span class="gate-btn-text">Continue →</span>
+                <div class="gate-btn-ripple"></div>
+            </button>
+            <p class="gate-hint">// Only one name opens the door</p>
+        </div>
+    </div>
+
+    <!-- ============ FRIENDSHIP CONTENT (wrong name) ============ -->
+    <div id="friend-content" class="page-content friend-mode hidden">
+        <div class="friend-header">
+            <div class="friend-icon">🌸</div>
+            <h1 class="friend-title">Friendship Is Beautiful</h1>
+            <p class="friend-name-display" id="friend-name-display"></p>
+        </div>
+        <div class="friend-body">
+            <div class="friend-quote-card">
+                <p class="friend-quote">"Friendship is beautiful… but it is not love."</p>
+            </div>
+            <div class="friend-quote-card">
+                <p class="friend-quote">"A real friend is one who walks in when the rest of the world walks out."</p>
+            </div>
+            <div class="friend-quote-card">
+                <p class="friend-quote">"True friends are rare like stars — you don't always see them, but they are
+                    always there."</p>
+            </div>
+            <div class="friend-symbols">
+                <span>🌸</span><span>🤝</span><span>🌿</span><span>💙</span>
+            </div>
+            <p class="friend-closing">Thank you for being here. But the full page is reserved for someone else. 💙</p>
+            <a href="index.html" class="friend-back-btn">← Go Back</a>
+        </div>
+    </div>
+
+    <!-- ============ LOVE CONTENT (correct name) ============ -->
+    <div id="love-content" class="page-content love-mode hidden">
+
+        <!-- HERO -->
+        <div class="lv-hero">
+            <div class="lv-hero-inner">
+                <div class="lv-greeting" id="lv-greeting">Because you are… ❤️</div>
+                <h1 class="lv-title">All of this was made because your name is</h1>
+                <div class="lv-name-reveal" id="lv-name-reveal"></div>
+                <div class="lv-hearts-row">
+                    <span class="lv-h lv-h1">💕</span>
+                    <span class="lv-h lv-h2">❤️</span>
+                    <span class="lv-h lv-h3">💖</span>
+                    <span class="lv-h lv-h4">🌹</span>
+                    <span class="lv-h lv-h5">💕</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN PHOTO SECTION -->
+        <div class="lv-photo-section">
+            <div class="lv-photo-wrap">
+                <div class="lv-photo-glow"></div>
+                <img src="assets/imgs/my_girl.jpg" alt="My Love" class="lv-photo" loading="lazy">
+                <div class="lv-photo-frame"></div>
+            </div>
+            <div class="lv-photo-caption">
+                <span class="lv-caption-heart">❤️</span>
+                <span>The most beautiful part of my life</span>
+            </div>
+        </div>
+
+        <!-- SMALL GRID PHOTO GALLERY SECTION -->
+        <div class="lv-photo-gallery">
+            <div class="lv-gallery-grid">
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love2.jpg" alt="Love Memories" loading="lazy">
+                </div>
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love3.jpg" alt="Love Memories" loading="lazy">
+                </div>
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love4.jpg" alt="Love Memories" loading="lazy">
+                </div>
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love5.jpg" alt="Love Memories" loading="lazy">
+                </div>
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love6.jpg" alt="Love Memories" loading="lazy">
+                </div>
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love7.jpg" alt="Love Memories" loading="lazy">
+                </div>
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love9.jpg" alt="Love Memories" loading="lazy">
+                </div>
+                <div class="lv-photo-wrap">
+                    <img src="assets/imgs/love10.jpg" alt="Love Memories" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- MESSAGES SECTION -->
+        <div class="lv-messages">
+            <div class="lv-msg-card lv-msg-card--1">
+                <div class="lv-msg-icon">💌</div>
+                <p class="lv-msg-text">"Behind every line of code, there is a feeling that makes it worth writing. You
+                    are the greatest bug fix of my life — the one who made everything make sense."</p>
+            </div>
+            <div class="lv-msg-card lv-msg-card--2">
+                <div class="lv-msg-icon">🌹</div>
+                <p class="lv-msg-text">"In a world of chaos and trials, you are my safe harbor. In every difficult
+                    moment, I find myself thinking of you."</p>
+            </div>
+            <div class="lv-msg-card lv-msg-card--3">
+                <div class="lv-msg-icon">✨</div>
+                <p class="lv-msg-text">"You are not just someone in my life — you are the reason I want to be the best
+                    version of myself every single day."</p>
+            </div>
+            <div class="lv-msg-card lv-msg-card--4">
+                <div class="lv-msg-icon">💫</div>
+                <p class="lv-msg-text">"Life without you is like code without comments — it works, but it loses all
+                    meaning."</p>
+            </div>
+        </div>
+
+        <!-- SPECIAL MESSAGE -->
+        <div class="lv-special">
+            <div class="lv-special-inner">
+                <div class="lv-special-deco-left">❤️</div>
+                <div class="lv-special-content">
+                    <div class="lv-special-label">// My message to you</div>
+                    <p class="lv-special-text" id="lv-special-text">
+                        Dear <span class="lv-special-name" id="lv-special-name"></span>,<br><br>
+                        I don't know how to describe how you make me feel in simple words,
+                        but I know that every day that passes I thank destiny for you.
+                        This page was made especially for you — because you deserve something special,
+                        something that no one else sees.
+                        <br><br>
+                        I love you. ❤️
+                    </p>
+                </div>
+                <div class="lv-special-deco-right">🌹</div>
+            </div>
+        </div>
+
+        <!-- SYMBOLS ROW -->
+        <div class="lv-symbols">
+            <span class="lv-sym">💕</span>
+            <span class="lv-sym">🌹</span>
+            <span class="lv-sym">✨</span>
+            <span class="lv-sym">💖</span>
+            <span class="lv-sym">💫</span>
+            <span class="lv-sym">🌸</span>
+            <span class="lv-sym">❤️</span>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="lv-footer">
+            <p>Made with ❤️ by Moayad — Only for <span id="lv-footer-name"></span></p>
+        </div>
+
+    </div>
+
+    <!-- FLOATING AVATAR -->
+    <button id="avatar-btn" class="avatar-hidden" aria-label="Open admin panel">
+        <img src="assets/imgs/hacker1.jpg" alt="Admin" id="avatar-btn-img">
+        <div class="avatar-ring"></div>
+    </button>
+
+    <!-- ADMIN MODAL -->
+    <div id="admin-modal" class="modal-overlay" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <div class="modal-icon">🔐</div>
+            <h3>Admin Access</h3>
+            <p class="modal-sub">Enter password to access the control panel</p>
+            <form id="admin-form">
+                <input type="password" id="admin-pass" placeholder="Enter password..." autocomplete="current-password">
+                <div id="admin-error" class="admin-error" aria-live="polite"></div>
+                <button type="submit" class="gate-btn" style="margin-top:15px;width:100%;">Unlock Panel</button>
+            </form>
+            <button class="modal-close" id="modal-close-btn" aria-label="Close">×</button>
+        </div>
+    </div>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" role="complementary" aria-label="Admin Panel">
+        <div class="sidebar-header">
+            <div class="sidebar-profile">
+                <img id="sb-avatar" src="assets/imgs/hacker1.jpg" alt="Profile">
+                <div>
+                    <div id="sb-name-display" class="sb-name">Moayad</div>
+                    <div id="sb-spec-display" class="sb-spec">Ethical Hacker</div>
+                </div>
+            </div>
+            <button id="sidebar-close" class="sidebar-close-btn" aria-label="Close">×</button>
+        </div>
+
+        <div class="sidebar-tabs">
+            <button class="sb-tab active" data-tab="love">Love Page Config</button>
+        </div>
+
+        <div class="sidebar-body">
+            <!-- LOVE TAB -->
+            <div id="tab-love" class="sb-tab-content active">
+                <div class="sb-group toggle-row">
+                    <label>Show Love Section (on Main)</label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="love-visible" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="sb-group">
+                    <label>Main Image Preview</label>
+                    <img id="sb-love-preview" src="assets/imgs/love1.jpg" class="sb-img-preview" alt="Love preview"
+                        style="max-width:100%;border-radius:12px;margin:10px 0;">
+                    <input type="file" id="love-img-input" accept="image/*" style="display:none">
+                    <label for="love-img-input" class="gate-btn"
+                        style="display:block;text-align:center;cursor:pointer;padding:8px;font-size:0.9rem;">📁 Change
+                        Image</label>
+                </div>
+                <div class="sb-group" style="margin-top:20px;">
+                    <label>Love Message</label>
+                    <textarea id="edit-love-msg" rows="5" placeholder="Your love message..."
+                        style="width:100%;padding:10px;border-radius:8px;background:rgba(255,107,157,0.1);border:1px solid rgba(255,107,157,0.3);color:#fff;font-family:var(--font);margin-top:8px;"></textarea>
+                </div>
+                <button class="gate-btn" id="save-love-btn" style="width:100%;margin-top:20px;">💾 Save Love</button>
+            </div>
+        </div>
+    </aside>
+
+    <script src="assets/js/love.js"></script>
+</body>
+
+</html>
