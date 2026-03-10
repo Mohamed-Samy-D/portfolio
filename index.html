@@ -29,7 +29,6 @@
                 <li><a href="#books">Books</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#love">Love</a></li>
                 <li><a href="#social">Social</a></li>
             </ul>
         </div>
@@ -47,7 +46,6 @@
                 <a href="#books" class="btn btn-ghost">Books</a>
                 <a href="#skills" class="btn btn-ghost">Skills</a>
                 <a href="#hobbies" class="btn btn-ghost">Hobbies</a>
-                <a href="#love" class="btn btn-ghost btn-love">Love ❤️</a>
                 <a href="#social" class="btn btn-ghost">Social</a>
             </div>
             <div class="hero-stats">
@@ -122,45 +120,6 @@
         </div>
     </section>
 
-    <!-- LOVE -->
-    <section id="love" class="section love-section reveal">
-        <div class="love-section-bg"></div>
-        <div class="love-particles">
-            <span class="lp lp1">💕</span>
-            <span class="lp lp2">✨</span>
-            <span class="lp lp3">🌹</span>
-            <span class="lp lp4">💫</span>
-            <span class="lp lp5">💕</span>
-            <span class="lp lp6">✨</span>
-        </div>
-        <div class="section-inner">
-            <div class="section-header">
-                <div class="section-label love-label">// Love ❤️</div>
-                <h2 class="section-title love-title">My Heart</h2>
-            </div>
-            <div class="love-redesigned">
-                <div class="love-photo-wrap">
-                    <div class="love-photo-glow"></div>
-                    <img id="love-main-img" src="assets/imgs/love1.jpg" alt="Love" class="love-main-photo">
-                    <div class="love-photo-overlay"></div>
-                </div>
-                <div class="love-content-new">
-                    <div class="love-quote-mark">"</div>
-                    <p id="love-message" class="love-message-new">Behind every line of code, there's a feeling that
-                        makes it worth writing. You are my greatest bug fix — the one who made everything make sense.
-                    </p>
-                    <div class="love-quote-author">— Moayad ❤️</div>
-                    <a href="love.html" class="love-cta-btn" id="love-cta-btn">
-                        <span class="love-cta-heart">❤️</span>
-                        <span class="love-cta-text">Open My Heart</span>
-                        <span class="love-cta-arrow">→</span>
-                    </a>
-                    <p class="love-cta-hint">Something special is waiting…</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- SOCIAL -->
     <section id="social" class="section reveal">
         <div class="section-inner">
@@ -222,7 +181,6 @@
         <div class="sidebar-tabs">
             <button class="sb-tab active" data-tab="profile">Profile</button>
             <button class="sb-tab" data-tab="books">Books</button>
-            <button class="sb-tab" data-tab="love">Love</button>
             <button class="sb-tab" data-tab="social">Social</button>
         </div>
 
@@ -263,29 +221,6 @@
             <div id="tab-books" class="sb-tab-content">
                 <div id="sb-books-list"></div>
                 <button class="btn-add" id="add-book-btn">+ Add Book</button>
-            </div>
-
-            <!-- LOVE TAB -->
-            <div id="tab-love" class="sb-tab-content">
-                <div class="sb-group toggle-row">
-                    <label>Show Love Section</label>
-                    <label class="toggle-switch">
-                        <input type="checkbox" id="love-visible" checked>
-                        <span class="toggle-slider"></span>
-                    </label>
-                </div>
-                <div class="sb-group">
-                    <label>Main Image</label>
-                    <img id="sb-love-preview" src="assets/imgs/love1.jpg" class="sb-img-preview" alt="Love preview">
-                    <input type="file" id="love-img-input" accept="image/*" style="display:none">
-                    <label for="love-img-input" class="btn-add"
-                        style="display:block;text-align:center;cursor:pointer;">📁 Change Image</label>
-                </div>
-                <div class="sb-group">
-                    <label>Love Message</label>
-                    <textarea id="edit-love-msg" rows="5" placeholder="Your love message..."></textarea>
-                </div>
-                <button class="btn btn-primary btn-full save-btn" id="save-love-btn">💾 Save Love</button>
             </div>
 
             <!-- SOCIAL TAB -->

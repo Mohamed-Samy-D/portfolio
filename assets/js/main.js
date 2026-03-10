@@ -37,11 +37,6 @@ const DEFAULTS = {
     { title: 'The Web App Hacker\'s Handbook', author: 'Stuttard & Pinto', desc: 'The definitive guide to finding and exploiting web application flaws.', cover: '', gradient: 'linear-gradient(135deg,#003d00,#006600)', icon: '🌐' },
     { title: 'Social Engineering', author: 'Christopher Hadnagy', desc: 'Mastering the art of human hacking — the most overlooked attack vector.', cover: '', gradient: 'linear-gradient(135deg,#3a0000,#7a0000)', icon: '🧠' }
   ],
-  love: {
-    visible: true,
-    image: 'assets/imgs/love1.jpg',
-    message: "Behind every line of code, there's a feeling that makes it worth writing. You are my greatest bug fix — the one who made everything make sense. In a world of chaos and exploits, you're my safe harbor."
-  },
   social: [
     { platform: 'GitHub', handle: 'DeathSimsim', url: 'https://github.com/DeathSimsim', icon: '🐙', color: '#24292e', bg: '#1a1a1a' },
     { platform: 'LinkedIn', handle: 'Mohamed Samy', url: 'https://www.linkedin.com/in/mohamed-samy-4293133a2', icon: '💼', color: '#0077b5', bg: '#003352' },
@@ -91,12 +86,6 @@ function applyState() {
   renderSkills();
   renderHobbies();
   renderBooks();
-
-  /* Love */
-  const loveSection = document.getElementById('love');
-  if (loveSection) loveSection.style.display = state.love.visible ? '' : 'none';
-  setImg('love-main-img', state.love.image);
-  setText('love-message', state.love.message);
 
   renderSocial();
 }
@@ -249,10 +238,6 @@ function populateSbProfile() {
   setVal('edit-specialty', state.specialty);
   setVal('edit-bio', state.bio);
   setVal('edit-philosophy', state.philosophy);
-  setChecked('love-visible', state.love.visible);
-  setVal('edit-love-msg', state.love.message);
-  const lp = document.getElementById('sb-love-preview');
-  if (lp) lp.src = state.love.image || 'assets/imgs/love1.jpg';
 }
 
 function setVal(id, v) { const e = document.getElementById(id); if (e) e.value = v || ''; }
@@ -430,29 +415,6 @@ function initSidebar() {
   document.getElementById('add-book-btn')?.addEventListener('click', () => {
     state.books.push({ title: 'New Book', author: 'Author', desc: 'Description...', cover: '', gradient: 'linear-gradient(135deg,#1a1a2e,#0f3460)', icon: '📚' });
     renderSbBooks(); saveState(); renderBooks();
-  });
-
-  /* ---- Love tab events ---- */
-  document.getElementById('love-img-input')?.addEventListener('change', e => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = ev => {
-      state.love.image = ev.target.result;
-      const prev = document.getElementById('sb-love-preview');
-      if (prev) prev.src = ev.target.result;
-    };
-    reader.readAsDataURL(file);
-  });
-  document.getElementById('save-love-btn')?.addEventListener('click', () => {
-    state.love.visible = document.getElementById('love-visible').checked;
-    state.love.message = document.getElementById('edit-love-msg').value.trim() || state.love.message;
-    saveState();
-    const loveSection = document.getElementById('love');
-    if (loveSection) loveSection.style.display = state.love.visible ? '' : 'none';
-    setText('love-message', state.love.message);
-    setImg('love-main-img', state.love.image);
-    flashSave('Love section saved! ❤️');
   });
 
   /* ---- Social tab events ---- */
